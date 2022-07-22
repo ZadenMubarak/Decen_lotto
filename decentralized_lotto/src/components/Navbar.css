@@ -1,0 +1,10 @@
+*{
+    align-items: center;
+}
+
+input{
+    width: 120px;
+    height: 20px;
+    top: 90rem;
+    left: 200;
+}
