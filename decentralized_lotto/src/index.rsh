@@ -12,23 +12,30 @@ numbers_given = {
     fee_for_participation: UInt,
 }
 
+const lost_mssg = {
+    msg_lost: "Sorry you guessed wrong better luck next time"
+}
+
 const Main = Reach.App(() => {
     const winningNumbers = '5, 9, 12, 28';
     
 
     const Player = Participant('Player',{
         ...numbers_given,
+        pay(interact.fee_for_participacion)
         
     });
+    commit()
     Player.publish();
 
     if (interact.numbers == winningNumbers) {
          Player.only(()=>{
             interact.acceptWager(12000);        
     })
+    }
+    else{
 
-    }else{
-        Player.pay()
+        return interact.msg_lost
     }
 
     init();
