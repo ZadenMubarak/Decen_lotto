@@ -7,20 +7,21 @@
 //if not you lose 
 //if there are some numbers you get told you got a few right
 
+const numbers = View({Number: uint})
+
 numbers_given = {
-    numbers: Fun([], null),
+    num: numbers,
     fee_for_participation: UInt,
 }
 
-const lost_mssg = {
-    msg_lost: "Sorry you guessed wrong better luck next time"
-}
+const lost_mssg = "Sorry you guessed wrong better luck next time";
+
 
 const Main = Reach.App(() => {
-    const winningNumbers = '5, 9, 12, 28';
-    
 
-    const Player = Participant('Player',{
+    const winningNumbers = '5, 9, 12, 28';
+    //
+    const Player = API('Player',{
         ...numbers_given,
         pay(interact.fee_for_participacion)
         
@@ -35,7 +36,7 @@ const Main = Reach.App(() => {
     }
     else{
 
-        return interact.msg_lost
+        return interact.notify(lost_mssg)
     }
 
     init();

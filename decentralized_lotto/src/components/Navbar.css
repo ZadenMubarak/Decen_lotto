@@ -8,3 +8,142 @@ input{
     top: 90rem;
     left: 200;
 }
+
+.Nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    border: 2px solid #232923;
+    height: 80px;
+    background-color: rgb(112, 122, 119);
+    box-shadow: 0 10px 15px rgba(78, 90,0);
+}
+
+input{
+    position: absolute;
+    left: 560px;
+    top: 200px;
+    height: 30px;
+    width: 200px;
+    box-shadow: 0 10px 15px rgba(78, 90,0);
+    border-radius: 95px;
+    border-color: rgb(0, 57, 90);
+}
+
+.prima{
+    color: aqua;
+}
+
+.Nav .home{
+    position: absolute;
+    top: 26px;
+    left: 400px;
+    color: #232923;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+
+.Nav .Play{
+    position: absolute;
+    top: 26px;
+    left: 520px;
+    color: #232923;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.Nav .How{
+    position: absolute;
+    top: 26px;
+    left: 600px;
+    color: #232923;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.Nav .Res{
+    position: absolute;
+    top: 26px;
+    left: 740px;
+    color: #232923;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+
+/* CSS */
+.Nav .conn {
+    position: absolute;
+    top: 26px;
+    left: 1200px;
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  /* position: relative; */
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.Nav .conn:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.Nav .conn:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
