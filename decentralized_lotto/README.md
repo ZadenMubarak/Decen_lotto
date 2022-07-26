@@ -1,4 +1,4 @@
-# Dentralized lottrry system
+# Dentralized lottery system
 
 ```js
 import './App.css';
