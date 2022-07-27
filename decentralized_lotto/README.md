@@ -1,5 +1,8 @@
 # Dentralized lottery system
 
+#### javascript example without smartcontract 
+#### what frontend would get from the backend
+
 ```js
 import React from 'react';
 import {useRef} from 'react';
@@ -16,12 +19,6 @@ const Mainy = () => {
       console.log('yaaaaaaaay',inputRef.current.value,'is right')
 
     }
-
-    // else{
-    //   alert("nah wrong")
-    //   console.warn(inputRef.current.value);
-    //   console.log('try again',inputRef)
-    // }
 
     console.log(inputRef.current.value);
   }
