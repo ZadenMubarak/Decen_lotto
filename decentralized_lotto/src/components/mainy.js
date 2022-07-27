@@ -2,6 +2,8 @@ import React from 'react';
 import {useRef} from 'react';
 
 
+
+
 const Mainy = () => {
   const inputRef = useRef(null);
   const winning_numbers = "45,67,8,7";
@@ -50,12 +52,6 @@ const Mainy = () => {
       <br/> <br/>
 
       <button className='button-84' onClick={handleClick} >Play Numbers</button>
-
-      <div> 
-
-        <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
-
-      </div>
     </div>
   );
 };
